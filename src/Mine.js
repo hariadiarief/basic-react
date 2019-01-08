@@ -30,9 +30,9 @@ class Mine extends React.Component {
   }
 
   render() {
-    let texts = this.state.texts.map(function(text) {
+    let texts = this.state.texts.map(text => {
       return <Child text={text} counterClick={this.counterClick} />;
-    }, this);
+    });
 
     let style = { color: this.state.color };
 
